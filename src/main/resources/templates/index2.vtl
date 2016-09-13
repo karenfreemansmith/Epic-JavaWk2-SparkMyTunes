@@ -1,3 +1,4 @@
+#if ($loggedin)
   <h1>MyTunes</h1>
   <form action='/result' method='post'>
     <div class='row'>
@@ -37,3 +38,17 @@
     </div>
     <button type='submit' class='btn'>Add Tune!</button>
   </form>
+#else
+  <h1>Log in!</h1>
+  <form action='/' >
+      <div class="form-group">
+        <label for="email">Emails: </label>
+        <input id="email" name="email" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="password">Password: </label>
+        <input id="password" name="password" class="form-control" type="password">
+      </div>
+    <button type='submit' class='btn'>Log in!</button>
+  </form>
+#end

@@ -13,6 +13,21 @@ public class App {
 
     get("/", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
+      boolean loggedin = false;
+      // if(request.session().attribute("loggedin")!=null) {
+      //   loggedin=request.session().attribute("loggedin");
+      // }
+      // String email = request.queryParams("email");
+      // String password = request.queryParams("password");
+      //
+      // if ((email=="guest@sample.com")&&(password=="123")) {
+      //   loggedin = true;
+      //   request.session().attribute("loggedin", true);
+      // } else {
+      //   loggedin = false;
+      //   request.session().attribute("loggedin", false);
+      // }
+      // model.put("loggedin", request.session().attribute("loggedin"));
       model.put("template", "templates/index.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
