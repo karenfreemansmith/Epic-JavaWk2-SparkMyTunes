@@ -1,12 +1,21 @@
-# Project Title
+# iTunes
 Version 0.0.0: September 13, 2016
 
-by [Karen Freeman-Smith](https://github.com/karenfreemansmith)
+by [Karen Freeman-Smith](https://github.com/karenfreemansmith) and [Caleb Stevenson](https://github.com/CGrahamS/)
 
 ## Description
-A program to ...
+A program to organize our tunes!
 
 ### Specifications
+Information about tunes includes:
+* Title
+* Artist
+* Genre
+* Release Year
+* Original Media (CD/8-track)
+* Playtime
+* Filename
+
 
 ## Setup/Installation
 * Clone directory
@@ -25,4 +34,4 @@ Java, JUnit, Spark, Gradle
 ## Legal
 *Licensed under the GNU General Public License v3.0*
 
-Copyright (c) 2016 Copyright _Karen Freeman-Smith_ All Rights Reserved.
+Copyright (c) 2016 Copyright _Karen Freeman-Smith & Caleb Stevenson_ All Rights Reserved.
