@@ -1,9 +1,39 @@
-<h1>My Form</h1>
-<form action='/result'>
-  <div class="form-group">
-    <label for="item1">Item 1: </label>
-    <input id="item1" name="item1" class="form-control" type="text">
-  </div>
+<h1>MyTunes</h1>
+<form action='/result' method='post'>
+  <div class='row'>
 
-  <button type='submit' class='btn'>Add Media!</button>
+    <div class="form-group col-sm-6">
+      <label for="title">Song Title: </label>
+      <input id="title" name="title" class="form-control" type="text">
+    </div>
+    <div class="form-group col-sm-6">
+      <label for="artist">Artist: </label>
+      <input id="artist" name="artist" class="form-control" type="text">
+    </div>
+    <div class="form-group col-sm-6">
+      <label for="album">Album: </label>
+      <input id="album" name="album" class="form-control" type="text">
+    </div>
+    <div class="form-group col-sm-6">
+      <label for="genre">Genre: </label>
+      <input id="genre" name="genre" class="form-control" type="text">
+    </div>
+    <div class="form-group col-sm-6">
+      <label for="year">Release Year: </label>
+      <input id="year" name="year" class="form-control" type="text">
+    </div>
+    <div class="form-group col-sm-6">
+      <label for="media">Original Media: </label>
+      <input id="media" name="media" class="form-control" type="text">
+    </div>
+    <div class="form-group col-sm-6">
+      <label for="duration">Playtime: </label>
+      <input id="duration" name="duration" class="form-control" type="text">
+    </div>
+    <div class="form-group col-sm-6">
+      <label for="filename">Filename: </label>
+      <input id="filename" name="filename" class="form-control" type="text">
+    </div>
+  </div>
+  <button type='submit' class='btn'>Add Tune!</button>
 </form>

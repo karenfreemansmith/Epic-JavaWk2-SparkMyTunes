@@ -10,6 +10,7 @@ A program to organize our tunes!
 Information about tunes includes:
 * Title
 * Artist
+* Album
 * Genre
 * Release Year
 * Original Media (CD/8-track)

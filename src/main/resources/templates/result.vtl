@@ -1,1 +1,16 @@
-<h1>$result</h1>
+<div class="row">
+  #if ($tunes)
+    #foreach($tune in $tunes)
+      <div class="col-sm-4">
+        <h3><a href="/tunes/$filename">$tune.getTitle()</a></h3>
+        <p>Playtime: $tune.getDuration()</p>
+        <p>A $tune.getGenre() song from my $tune.getMedia(), "$tune.getAlbum()" by <em>$tune.getArtist()</em> released in <strong>$tune.getYear()</strong>.</p>
+      </div>
+    #end
+  #else
+    <h1>You need music in your life!</h1>
+    <h2>Caleb suggests: The Beatles, Neutral Milk Hotel, Queen</h2>
+    <h2>Karen suggests: The Beach Boys, Chicago, or Whitesnake</h2>
+  #end
+</div>
+<a href="/"><h3>Add more Tunes!</h3></a>
