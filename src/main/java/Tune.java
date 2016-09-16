@@ -1,4 +1,6 @@
-public class Tune {
+import java.io.Serializable;
+
+public class Tune implements Comparable, Serializable {
   private String mTitle;
   private String mAlbum;
   private String mArtist;
@@ -17,6 +19,26 @@ public class Tune {
     mMedia = media;
     mDuration = duration;
     mFilename = filename;
+  }
+
+  @Override
+  public String toString() {
+    return mTitle + " by " mArtist;
+  }
+
+  @Override
+  public int compareTo(Object obj) {
+    Tune otherTune = (Tune) obj;
+    if(equals(otherTune)) {
+      return 0;
+    }
+    int titleComp = mTitle.compareTo(otherTune.mTitle);
+    if(titleComp==0) {
+      int artistComp = mArtist.compareTo(otherTune.mArtist);
+      if(artistComp==0) {
+        return mAlbum.compareTo(otherTune.mAlbum);
+      }
+    }
   }
 
   public String getTitle() {
